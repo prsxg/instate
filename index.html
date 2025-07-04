@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSTATE - Transforming India's Luxury Real Estate</title>
+    <meta name="description" content="India's premier data-driven luxury real estate consultancy. Bridging luxury aspirations with market realities through cutting-edge analytics.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="logo-animation">
+                <div class="logo-geometric"></div>
+                <h1 class="logo-text">INSTATE</h1>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <div class="logo-geometric"></div>
+                    <span class="logo-text">INSTATE</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#insights" class="nav-link">Market Insights</a></li>
+                    <li><a href="#properties" class="nav-link">Properties</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background"></div>
+        <div class="floating-elements">
+            <div class="floating-card card-1"></div>
+            <div class="floating-card card-2"></div>
+            <div class="floating-card card-3"></div>
+            <div class="floating-card card-4"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">Transforming India's</span>
+                    <span class="title-line gradient-text">Luxury Real Estate</span>
+                    <span class="title-line">Through Data-Driven Excellence</span>
+                </h1>
+                <p class="hero-subtitle">Bridging the gap between luxury real estate aspirations and market realities through cutting-edge analytics and exclusive access.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary iridescent-btn">Get Started</a>
+                    <a href="#insights" class="btn btn-secondary glass-btn">Market Insights</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Insights Section -->
+    <section class="insights" id="insights">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Market Insights</h2>
+                <p class="section-subtitle">Data-driven intelligence powering India's luxury real estate transformation</p>
+            </div>
+            <div class="insights-grid">
+                <div class="insight-card glass-card">
+                    <h3>Market Growth</h3>
+                    <div class="chart-container">
+                        <svg class="market-chart" viewBox="0 0 300 200">
+                            <defs>
+                                <linearGradient id="marketGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#065f46;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <path class="chart-line" d="M20,160 Q80,120 150,80 T280,40" stroke="url(#marketGradient)" stroke-width="3" fill="none"/>
+                            <circle class="chart-dot" cx="20" cy="160" r="4" fill="#f59e0b"/>
+                            <circle class="chart-dot" cx="150" cy="80" r="4" fill="#065f46"/>
+                            <circle class="chart-dot" cx="280" cy="40" r="4" fill="#1e3a8a"/>
+                        </svg>
+                    </div>
+                    <div class="insight-stats">
+                        <div class="stat">
+                            <span class="stat-value">$350B</span>
+                            <span class="stat-label">Current Market</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">$1T</span>
+                            <span class="stat-label">By 2030</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="insight-card glass-card">
+                    <h3>HNI Growth</h3>
+                    <div class="chart-container">
+                        <svg class="hni-chart" viewBox="0 0 300 200">
+                            <defs>
+                                <linearGradient id="hniGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect class="bar-chart" x="50" y="120" width="40" height="60" fill="url(#hniGradient)" opacity="0.8"/>
+                            <rect class="bar-chart" x="130" y="80" width="40" height="100" fill="url(#hniGradient)" opacity="0.9"/>
+                            <rect class="bar-chart" x="210" y="40" width="40" height="140" fill="url(#hniGradient)"/>
+                        </svg>
+                    </div>
+                    <div class="insight-stats">
+                        <div class="stat">
+                            <span class="stat-value">242.5K</span>
+                            <span class="stat-label">Current HNIs</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">540K</span>
+                            <span class="stat-label">By 2030</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="insight-card glass-card">
+                    <h3>Expected Returns</h3>
+                    <div class="chart-container">
+                        <svg class="returns-chart" viewBox="0 0 300 200">
+                            <defs>
+                                <linearGradient id="returnsGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <circle class="progress-ring" cx="150" cy="100" r="60" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="8"/>
+                            <circle class="progress-ring-fill" cx="150" cy="100" r="60" fill="none" stroke="url(#returnsGradient)" stroke-width="8" stroke-dasharray="377" stroke-dashoffset="113"/>
+                            <text class="progress-text" x="150" y="100" text-anchor="middle" dy="0.35em">12-20%</text>
+                            <text class="progress-label" x="150" y="120" text-anchor="middle" dy="0.35em">IRR</text>
+                        </svg>
+                    </div>
+                    <div class="insight-stats">
+                        <div class="stat">
+                            <span class="stat-value">18.5%</span>
+                            <span class="stat-label">CAGR</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">$91B</span>
+                            <span class="stat-label">Luxury Segment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive solutions for luxury real estate excellence</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card glass-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <h3>HNI Property Services</h3>
+                    <p>Exclusive access to premium properties with personalized advisory and end-to-end transaction management.</p>
+                    <ul class="service-features">
+                        <li>Curated Property Selection</li>
+                        <li>Exclusive Pre-Launch Access</li>
+                        <li>Personalized Advisory Services</li>
+                        <li>End-to-End Transaction Management</li>
+                        <li>Investment Portfolio Optimization</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline iridescent-btn">Learn More</a>
+                </div>
+
+                <div class="service-card glass-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Developer Consulting</h3>
+                    <p>Strategic consulting services to optimize development projects through data-driven insights and market intelligence.</p>
+                    <ul class="service-features">
+                        <li>Market Intelligence & Analytics</li>
+                        <li>Pricing Optimization Models</li>
+                        <li>Consumer Behavior Insights</li>
+                        <li>Marketing Strategy Development</li>
+                        <li>Sales Performance Tracking</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline iridescent-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Section -->
+    <section class="properties" id="properties">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Curated Properties</h2>
+                <p class="section-subtitle">Exclusive access to India's most coveted luxury real estate</p>
+            </div>
+            <div class="properties-grid">
+                <div class="property-card glass-card">
+                    <div class="property-image">
+                        <div class="property-placeholder mumbai-gradient"></div>
+                        <div class="property-badge">Mumbai</div>
+                    </div>
+                    <div class="property-content">
+                        <h3>Financial Capital</h3>
+                        <p class="property-price">₹15,000 - 50,000 per sq ft</p>
+                        <p class="property-yield">3-3.5% residential • 7-8% commercial</p>
+                        <div class="property-features">
+                            <span class="feature">Premium Location</span>
+                            <span class="feature">High Yield</span>
+                            <span class="feature">Exclusive Access</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="property-card glass-card">
+                    <div class="property-image">
+                        <div class="property-placeholder bangalore-gradient"></div>
+                        <div class="property-badge">Bangalore</div>
+                    </div>
+                    <div class="property-content">
+                        <h3>Technology Capital</h3>
+                        <p class="property-price">₹7,000 - 25,000 per sq ft</p>
+                        <p class="property-yield">3.5% residential • 8% commercial</p>
+                        <div class="property-features">
+                            <span class="feature">Tech Hub</span>
+                            <span class="feature">Growth Potential</span>
+                            <span class="feature">Modern Infrastructure</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="property-card glass-card">
+                    <div class="property-image">
+                        <div class="property-placeholder delhi-gradient"></div>
+                        <div class="property-badge">Delhi NCR</div>
+                    </div>
+                    <div class="property-content">
+                        <h3>Corporate Hub</h3>
+                        <p class="property-price">₹8,000 - 35,000 per sq ft</p>
+                        <p class="property-yield">3% residential • 7.5% commercial</p>
+                        <div class="property-features">
+                            <span class="feature">Political Center</span>
+                            <span class="feature">Corporate Hub</span>
+                            <span class="feature">Strategic Location</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About INSTATE</h2>
+                    <p class="section-subtitle">Founded by industry expert with international experience</p>
+                    <div class="founder-info">
+                        <div class="founder-avatar">
+                            <div class="avatar-placeholder"></div>
+                        </div>
+                        <div class="founder-details">
+                            <h3>Paras Gupta</h3>
+                            <p class="founder-title">Founder & CEO</p>
+                            <p class="founder-education">MSc International Marketing Management<br>University of Leeds</p>
+                            <p class="founder-experience">4 years marketing strategy experience in the UK</p>
+                        </div>
+                    </div>
+                    <div class="mission-statement">
+                        <h4>Our Mission</h4>
+                        <p>Bridging the gap between luxury real estate aspirations and market realities through cutting-edge analytics and exclusive access.</p>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item glass-card">
+                        <span class="stat-number">$1T</span>
+                        <span class="stat-description">Market Size by 2030</span>
+                    </div>
+                    <div class="stat-item glass-card">
+                        <span class="stat-number">540K</span>
+                        <span class="stat-description">Projected HNIs</span>
+                    </div>
+                    <div class="stat-item glass-card">
+                        <span class="stat-number">18.5%</span>
+                        <span class="stat-description">Market CAGR</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Ready to transform your luxury real estate journey?</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <div class="contact-form glass-card">
+                        <h3>Contact Us</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="service" class="form-label">Service Interest</label>
+                                <select id="service" name="service" class="form-control">
+                                    <option value="">Select a service</option>
+                                    <option value="hni">HNI Property Services</option>
+                                    <option value="developer">Developer Consulting</option>
+                                    <option value="both">Both Services</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" class="form-control" rows="4" placeholder="Tell us about your requirements..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full-width iridescent-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-card glass-card">
+                        <h4>Direct Contact</h4>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>paras@instate.ai</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <span>+44 (0)77 0000 0000</span>
+                        </div>
+                        <a href="https://forms.gle/Instate-UK-Interest" target="_blank" class="btn btn-outline iridescent-btn">Google Form</a>
+                    </div>
+                    <div class="social-links">
+                        <h4>Connect With Us</h4>
+                        <div class="social-buttons">
+                            <a href="#" class="social-btn glass-card" target="_blank">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="#" class="social-btn glass-card" target="_blank">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                                <span>Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-geometric"></div>
+                        <span class="logo-text">INSTATE</span>
+                    </div>
+                    <p>Transforming India's luxury real estate through data-driven excellence.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">HNI Property Services</a></li>
+                            <li><a href="#services">Developer Consulting</a></li>
+                            <li><a href="#insights">Market Intelligence</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#insights">Market Insights</a></li>
+                            <li><a href="#properties">Properties</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="mailto:paras@instate.ai">paras@instate.ai</a></li>
+                            <li><a href="tel:+44077000000">+44 (0)77 0000 0000</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 INSTATE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
