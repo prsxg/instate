@@ -525,63 +525,99 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Ready to explore India's luxury property opportunities?</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-form-container">
-                    <div class="contact-form glass-card">
-                        <h3>Contact Us</h3>
-                        <form id="contactForm">
-                            <div class="form-group">
-                                <label for="name" class="form-label">Full Name *</label>
-                                <input type="text" id="name" name="name" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email" class="form-label">Email Address *</label>
-                                <input type="email" id="email" name="email" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="company" class="form-label">Company/Organisation</label>
-                                <input type="text" id="company" name="company" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="service" class="form-label">Service Interest</label>
-                                <select id="service" name="service" class="form-control">
-                                    <option value="">Select service</option>
-                                    <option value="boutique-advisory">Boutique Property Advisory</option>
-                                    <option value="developer-consulting">Developer Consulting</option>
-                                    <option value="strategic-partnership">Strategic Partnership</option>
-                                    <option value="general-enquiry">General Enquiry</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="investment" class="form-label">Investment Size Range</label>
-                                <select id="investment" name="investment" class="form-control">
-                                    <option value="">Select range</option>
-                                    <option value="1-5">£1M - £5M</option>
-                                    <option value="5-10">£5M - £10M</option>
-                                    <option value="10-25">£10M - £25M</option>
-                                    <option value="25+">£25M+</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="message" class="form-label">Tell us about your requirements *</label>
-                                <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label class="checkbox-label">
-                                    <input type="checkbox" name="privacy" required>
-                                    I agree to the Privacy Policy and consent to my data being processed for consultation purposes.
-                                </label>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-full-width iridescent-btn">Send Message</button>
-                        </form>
-                    </div>
-                </div>
+<div class="contact-form glass-card">
+    <h3>Contact Us</h3>
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSfoiUtORH9uU_5yUSy1FDwLD9r-bZuvfZDbBQfxbrOMNASEog/formResponse" 
+          method="POST" 
+          target="hidden_iframe" 
+          onsubmit="submitted=true;">
+        
+        <div class="form-group">
+            <label for="name" class="form-label">Full Name *</label>
+            <input type="text" 
+                   id="name" 
+                   name="entry.1155172913" 
+                   class="form-control" 
+                   required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email" class="form-label">Email Address *</label>
+            <input type="email" 
+                   id="email" 
+                   name="entry.760362264" 
+                   class="form-control" 
+                   required>
+        </div>
+        
+        <div class="form-group">
+            <label for="company" class="form-label">Company/Organisation</label>
+            <input type="text" 
+                   id="company" 
+                   name="entry.1421135957" 
+                   class="form-control">
+        </div>
+        
+        <div class="form-group">
+            <label for="service" class="form-label">Service Interest</label>
+            <select id="service" 
+                    name="entry.1745114236" 
+                    class="form-control">
+                <option value="">Select service</option>
+                <option value="Boutique Property Advisory">Boutique Property Advisory</option>
+                <option value="Developer Consulting">Developer Consulting</option>
+                <option value="Strategic Partnerships">Strategic Partnerships</option>
+                <option value="General Enquiry">General Enquiry</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="investment" class="form-label">Investment Size Range</label>
+            <select id="investment" 
+                    name="entry.1445450039" 
+                    class="form-control">
+                <option value="">Select range</option>
+                <option value="£1M-£5M">£1M-£5M</option>
+                <option value="£5M-£10M">£5M-£10M</option>
+                <option value="£10M-£25M">£10M-£25M</option>
+                <option value="£25M+">£25M+</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="message" class="form-label">Tell us about your requirements *</label>
+            <textarea id="message" 
+                      name="entry.1862691564" 
+                      class="form-control" 
+                      rows="4" 
+                      required></textarea>
+        </div>
+        
+        <div class="form-group">
+            <label class="checkbox-label">
+                <input type="checkbox" 
+                       name="entry.1900198387" 
+                       value="I agree to the Privacy Policy and consent to my data being processed for consultation purposes." 
+                       required>
+                I agree to the Privacy Policy and consent to my data being processed for consultation purposes.
+            </label>
+        </div>
+        
+        <button type="submit" class="btn btn-primary btn-full-width iridescent-btn">
+            Send Message
+        </button>
+    </form>
+    
+    <!-- Hidden iframe for form submission -->
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+    
+    <!-- Success message -->
+    <div id="success-message" style="display:none; text-align:center; padding:20px;">
+        <h4 style="color: var(--color-success);">Thank you for your enquiry!</h4>
+        <p>We'll get back to you within 24 hours.</p>
+    </div>
+</div>
+
                 <div class="contact-info">
                     <div class="contact-card glass-card">
                         <h4>Contact Information</h4>
