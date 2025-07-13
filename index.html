@@ -524,13 +524,13 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+<!-- Contact Section -->
 <div class="contact-form glass-card">
     <h3>Contact Us</h3>
-    <form action="https://docs.google.com/forms/d/e/1FAIpQLSfoiUtORH9uU_5yUSy1FDwLD9r-bZuvfZDbBQfxbrOMNASEog/formResponse" 
+    <form id="contactForm"
+          action="https://docs.google.com/forms/d/e/1FAIpQLSfoiUtORH9uU_5yUSy1FDwLD9r-bZuvfZDbBQfxbrOMNASEog/formResponse" 
           method="POST" 
-          target="hidden_iframe" 
-          onsubmit="submitted=true;">
+          target="hidden_iframe">
         
         <div class="form-group">
             <label for="name" class="form-label">Full Name *</label>
@@ -611,12 +611,14 @@
     <!-- Hidden iframe for form submission -->
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
     
-    <!-- Success message -->
-    <div id="success-message" style="display:none; text-align:center; padding:20px;">
-        <h4 style="color: var(--color-success);">Thank you for your enquiry!</h4>
-        <p>We'll get back to you within 24 hours.</p>
+    <!-- Enhanced Success message -->
+    <div id="success-message" style="display:none; text-align:center; padding:30px; background: var(--color-glass); border-radius: var(--radius-lg); margin-top: 20px; backdrop-filter: blur(20px); border: 1px solid var(--color-glass-border);">
+        <div style="font-size: 48px; margin-bottom: 16px;">✅</div>
+        <h4 style="color: #10b981; margin-bottom: 12px; font-size: 24px; font-weight: 600;">Thank you for your enquiry!</h4>
+        <p style="color: var(--color-text-secondary); font-size: 16px; margin-bottom: 0; line-height: 1.5;">We'll get back to you within 24 hours to discuss your requirements.</p>
     </div>
 </div>
+
 
                 <div class="contact-info">
                     <div class="contact-card glass-card">
