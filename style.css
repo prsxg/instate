@@ -1255,33 +1255,39 @@ a:hover {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* CRITICAL: Enhanced light golden gradient for line 2 ONLY - MAXIMUM visibility */
+/* GUARANTEED VISIBLE: Solid golden text with glow effect */
 .hero-title .gradient-text {
-    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 20%, #f97316 40%, #ea580c 60%, #dc2626 80%, #fbbf24 100%) !important;
-    background-size: 300% 300% !important;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    background-clip: text !important;
-    color: transparent !important;
-    animation: enhancedGoldenShimmer 2s ease-in-out infinite !important;
-    text-shadow: none !important;
-    font-weight: var(--font-weight-bold) !important;
-    filter: contrast(1.5) brightness(1.4) saturate(1.6) !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: #f59e0b !important;
+    background-clip: unset !important;
+    color: #f59e0b !important;
+    text-shadow: 
+        0 0 10px rgba(245, 158, 11, 0.8),
+        0 0 20px rgba(245, 158, 11, 0.6),
+        0 0 30px rgba(245, 158, 11, 0.4) !important;
+    font-weight: 700 !important;
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
-    position: relative !important;
-    z-index: 10 !important;
+    animation: goldenGlow 2s ease-in-out infinite !important;
 }
 
-/* Fallback for browsers that don't support background-clip: text */
-@supports not (-webkit-background-clip: text) {
-    .hero-title .gradient-text {
-        background: none !important;
-        color: #f59e0b !important;
-        text-shadow: 0 0 20px rgba(245, 158, 11, 0.5) !important;
+@keyframes goldenGlow {
+    0%, 100% {
+        text-shadow: 
+            0 0 10px rgba(245, 158, 11, 0.8),
+            0 0 20px rgba(245, 158, 11, 0.6),
+            0 0 30px rgba(245, 158, 11, 0.4);
+    }
+    50% {
+        text-shadow: 
+            0 0 15px rgba(245, 158, 11, 1.0),
+            0 0 30px rgba(245, 158, 11, 0.8),
+            0 0 45px rgba(245, 158, 11, 0.6);
     }
 }
+
 @keyframes enhancedGoldenShimmer {
   0%, 100% { 
     background-position: 0% 50%; 
