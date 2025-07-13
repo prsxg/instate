@@ -368,7 +368,30 @@ function handleFormSubmit(e) {
         showNotification('Please fill in all required fields.', 'error');
         return;
     }
-    
+    // Handle form submission success
+var submitted = false;
+
+// Check if form was submitted successfully
+setInterval(function() {
+    if (submitted) {
+        // Hide the form
+        document.querySelector('.contact-form form').style.display = 'none';
+        
+        // Show success message
+        document.querySelector('#success-message').style.display = 'block';
+        
+        // Reset the flag
+        submitted = false;
+        
+        // Reset form after 5 seconds
+        setTimeout(function() {
+            document.querySelector('.contact-form form').style.display = 'block';
+            document.querySelector('#success-message').style.display = 'none';
+            document.querySelector('.contact-form form').reset();
+        }, 5000);
+    }
+}, 1000);
+
     // Validate email format
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formValues.email)) {
