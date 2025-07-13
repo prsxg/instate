@@ -525,162 +525,228 @@
     </section>
 
 <!-- Contact Section -->
-<div class="contact-form glass-card">
-    <h3>Contact Us</h3>
-    <form id="contactForm"
-          action="https://docs.google.com/forms/d/e/1FAIpQLSfoiUtORH9uU_5yUSy1FDwLD9r-bZuvfZDbBQfxbrOMNASEog/formResponse" 
-          method="POST" 
-          target="hidden_iframe">
-        
-        <div class="form-group">
-            <label for="name" class="form-label">Full Name *</label>
-            <input type="text" 
-                   id="name" 
-                   name="entry.1155172913" 
-                   class="form-control" 
-                   required>
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Ready to explore India's luxury property opportunities?</p>
         </div>
         
-        <div class="form-group">
-            <label for="email" class="form-label">Email Address *</label>
-            <input type="email" 
-                   id="email" 
-                   name="entry.760362264" 
-                   class="form-control" 
-                   required>
-        </div>
-        
-        <div class="form-group">
-            <label for="company" class="form-label">Company/Organisation</label>
-            <input type="text" 
-                   id="company" 
-                   name="entry.1421135957" 
-                   class="form-control">
-        </div>
-        
-        <div class="form-group">
-            <label for="service" class="form-label">Service Interest</label>
-            <select id="service" 
-                    name="entry.1745114236" 
-                    class="form-control">
-                <option value="">Select service</option>
-                <option value="Boutique Property Advisory">Boutique Property Advisory</option>
-                <option value="Developer Consulting">Developer Consulting</option>
-                <option value="Strategic Partnerships">Strategic Partnerships</option>
-                <option value="General Enquiry">General Enquiry</option>
-            </select>
-        </div>
-        
-        <div class="form-group">
-            <label for="investment" class="form-label">Investment Size Range</label>
-            <select id="investment" 
-                    name="entry.1445450039" 
-                    class="form-control">
-                <option value="">Select range</option>
-                <option value="£1M-£5M">£1M-£5M</option>
-                <option value="£5M-£10M">£5M-£10M</option>
-                <option value="£10M-£25M">£10M-£25M</option>
-                <option value="£25M+">£25M+</option>
-            </select>
-        </div>
-        
-        <div class="form-group">
-            <label for="message" class="form-label">Tell us about your requirements *</label>
-            <textarea id="message" 
-                      name="entry.1862691564" 
-                      class="form-control" 
-                      rows="4" 
-                      required></textarea>
-        </div>
-        
-        <div class="form-group">
-            <label class="checkbox-label">
-                <input type="checkbox" 
-                       name="entry.1900198387" 
-                       value="I agree to the Privacy Policy and consent to my data being processed for consultation purposes." 
-                       required>
-                I agree to the Privacy Policy and consent to my data being processed for consultation purposes.
-            </label>
-        </div>
-        
-        <button type="submit" class="btn btn-primary btn-full-width iridescent-btn">
-            Send Message
-        </button>
-    </form>
-    
-    <!-- Hidden iframe for form submission -->
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
-    
-    <!-- Enhanced Success message -->
-    <div id="success-message" style="display:none; text-align:center; padding:30px; background: var(--color-glass); border-radius: var(--radius-lg); margin-top: 20px; backdrop-filter: blur(20px); border: 1px solid var(--color-glass-border);">
-        <div style="font-size: 48px; margin-bottom: 16px;">✅</div>
-        <h4 style="color: #10b981; margin-bottom: 12px; font-size: 24px; font-weight: 600;">Thank you for your enquiry!</h4>
-        <p style="color: var(--color-text-secondary); font-size: 16px; margin-bottom: 0; line-height: 1.5;">We'll get back to you within 24 hours to discuss your requirements.</p>
-    </div>
-</div>
-
-
-                <div class="contact-info">
-                    <div class="contact-card glass-card">
-                        <h4>Contact Information</h4>
+        <div class="contact-content">
+            <!-- Left Side: Contact Form -->
+            <div class="contact-form-wrapper">
+                <div class="contact-form glass-card">
+                    <h3>Contact Us</h3>
+                    <form id="contactForm"
+                          action="https://docs.google.com/forms/d/e/1FAIpQLSfoiUtORH9uU_5yUSy1FDwLD9r-bZuvfZDbBQfxbrOMNASEog/formResponse" 
+                          method="POST" 
+                          target="hidden_iframe">
+                        
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name *</label>
+                            <input type="text" 
+                                   id="name" 
+                                   name="entry.1155172913" 
+                                   class="form-control" 
+                                   required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" 
+                                   id="email" 
+                                   name="entry.760362264" 
+                                   class="form-control" 
+                                   required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company" class="form-label">Company/Organisation</label>
+                            <input type="text" 
+                                   id="company" 
+                                   name="entry.1421135957" 
+                                   class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service" class="form-label">Service Interest</label>
+                            <select id="service" 
+                                    name="entry.1745114236" 
+                                    class="form-control">
+                                <option value="">Select service</option>
+                                <option value="Boutique Property Advisory">Boutique Property Advisory</option>
+                                <option value="Developer Consulting">Developer Consulting</option>
+                                <option value="Strategic Partnerships">Strategic Partnerships</option>
+                                <option value="General Enquiry">General Enquiry</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="investment" class="form-label">Investment Size Range</label>
+                            <select id="investment" 
+                                    name="entry.1445450039" 
+                                    class="form-control">
+                                <option value="">Select range</option>
+                                <option value="£1M-£5M">£1M-£5M</option>
+                                <option value="£5M-£10M">£5M-£10M</option>
+                                <option value="£10M-£25M">£10M-£25M</option>
+                                <option value="£25M+">£25M+</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Tell us about your requirements *</label>
+                            <textarea id="message" 
+                                      name="entry.1862691564" 
+                                      class="form-control" 
+                                      rows="4" 
+                                      required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" 
+                                       name="entry.1900198387" 
+                                       value="I agree to the Privacy Policy and consent to my data being processed for consultation purposes." 
+                                       required>
+                                I agree to the Privacy Policy and consent to my data being processed for consultation purposes.
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full-width iridescent-btn">
+                            Send Message
+                        </button>
+                    </form>
+                    
+                    <!-- Hidden iframe for form submission -->
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+                    
+                    <!-- Enhanced Success message -->
+                    <div id="success-message" style="display:none; text-align:center; padding:30px; background: var(--color-glass); border-radius: var(--radius-lg); margin-top: 20px; backdrop-filter: blur(20px); border: 1px solid var(--color-glass-border);">
+                        <div style="font-size: 48px; margin-bottom: 16px;">✅</div>
+                        <h4 style="color: #10b981; margin-bottom: 12px; font-size: 24px; font-weight: 600;">Thank you for your enquiry!</h4>
+                        <p style="color: var(--color-text-secondary); font-size: 16px; margin-bottom: 0; line-height: 1.5;">We'll get back to you within 24 hours to discuss your requirements.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Side: Contact Information -->
+            <div class="contact-info-wrapper">
+                <!-- Contact Information Card -->
+                <div class="contact-info glass-card">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="contact-details">
                         <div class="contact-item">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                <polyline points="22,6 12,13 2,6"/>
-                            </svg>
-                            <div>
-                                <div>General Enquiry: <a href="mailto:contact@instate.studio">contact@instate.studio</a></div>
-                                <div>Boutique Real Estate Agency: <a href="mailto:concierge@instate.studio">concierge@instate.studio</a></div>
-                                <div>Developer Consulting: <a href="mailto:intelligence@instate.studio">intelligence@instate.studio</a></div>
-                                <div>Partnerships: <a href="mailto:paras@instate.studio">paras@instate.studio</a></div>
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>General Enquiry</h4>
+                                <p>contact@instate.studio</p>
                             </div>
                         </div>
+                        
                         <div class="contact-item">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                                <circle cx="12" cy="10" r="3"/>
-                            </svg>
-                            <span>London, UK</span>
+                            <div class="contact-icon">
+                                <i class="fas fa-concierge-bell"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Boutique Real Estate Agency</h4>
+                                <p>concierge@instate.studio</p>
+                            </div>
                         </div>
+                        
                         <div class="contact-item">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"/>
-                                <polyline points="12,6 12,12 16,14"/>
-                            </svg>
-                            <div>
-                                <div>Monday - Friday: 9:00 AM - 6:00 PM GMT</div>
-                                <div>Saturday: 10:00 AM - 2:00 PM GMT</div>
+                            <div class="contact-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Developer Consulting</h4>
+                                <p>intelligence@instate.studio</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Partnerships</h4>
+                                <p>paras@instate.studio</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>London, United Kingdom</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Business Hours</h4>
+                                <p>Monday - Friday: 9:00 AM - 6:00 PM GMT<br>
+                                   Saturday: 10:00 AM - 2:00 PM GMT</p>
                             </div>
                         </div>
                     </div>
+                </div>
+                
+                <!-- Connect With Us Section -->
+                <div class="connect-with-us glass-card">
+                    <h3>Connect With Us</h3>
+                    
                     <div class="social-links">
-                        <h4>Connect With Us</h4>
-                        <div class="social-buttons">
-                            <a href="#" class="social-btn glass-card" target="_blank">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                                </svg>
-                                <span>LinkedIn</span>
-                            </a>
-                            <a href="#" class="social-btn glass-card" target="_blank">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                                </svg>
-                                <span>Twitter</span>
-                            </a>
-                            <a href="mailto:contact@instate.studio" class="social-btn glass-card">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                    <polyline points="22,6 12,13 2,6"/>
-                                </svg>
-                                <span>Email</span>
-                            </a>
+                        <a href="#" class="social-link linkedin" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        
+                        <a href="#" class="social-link twitter" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                            <span>Twitter</span>
+                        </a>
+                        
+                        <a href="mailto:contact@instate.studio" class="social-link email">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                    
+                    <div class="newsletter-signup">
+                        <h4>Stay Updated with Market Intelligence</h4>
+                        <p>Join 500+ investors receiving our quarterly intelligence reports and market insights</p>
+                        
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Enter your email" class="newsletter-input" required>
+                            <button type="submit" class="newsletter-btn">Subscribe</button>
+                        </form>
+                        
+                        <div class="newsletter-benefits">
+                            <h5>What You'll Receive:</h5>
+                            <ul>
+                                <li>Quarterly market intelligence reports</li>
+                                <li>Regulatory updates and policy changes</li>
+                                <li>Investment opportunity alerts</li>
+                                <li>Exclusive market insights and analysis</li>
+                                <li>Invitation to UK property investment events</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Footer -->
     <footer class="footer">
