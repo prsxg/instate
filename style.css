@@ -21,6 +21,47 @@
   --color-info: rgba(98, 108, 113, 1);
   --color-focus-ring: rgba(33, 128, 141, 0.4);
   --color-select-caret: rgba(19, 52, 59, 0.8);
+  
+/* Google Form Styling */
+.google-form-container {
+    background: var(--color-glass);
+    backdrop-filter: blur(20px);
+    border-radius: var(--radius-xl);
+    padding: var(--space-24);
+    border: 1px solid var(--color-glass-border);
+    box-shadow: var(--shadow-glass);
+    overflow: hidden;
+}
+
+.google-form-container iframe {
+    width: 100%;
+    min-height: 1510px;
+    border: none;
+    border-radius: var(--radius-lg);
+    background: transparent;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-32);
+    }
+    
+    .google-form-container {
+        padding: var(--space-16);
+    }
+    
+    .google-form-container iframe {
+        min-height: 1400px; /* Slightly shorter on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .google-form-container iframe {
+        min-height: 1300px;
+    }
+}
 
   /* Common style patterns */
   --focus-ring: 0 0 0 3px var(--color-focus-ring);
