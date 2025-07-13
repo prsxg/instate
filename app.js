@@ -329,9 +329,9 @@ function animateCounter(element) {
     }, stepDuration);
 }
 
-// Form Handling
+// Form Handling - Updated for Google Forms Integration
 function initializeFormHandling() {
-    const contactForm = document.getElementById('contactForm');
+    const contactForm = document.querySelector('form[action*="formResponse"]');
     
     if (contactForm) {
         contactForm.addEventListener('submit', handleFormSubmit);
@@ -357,49 +357,84 @@ function initializeFormHandling() {
     });
 }
 
+// Updated Form Submit Handler for Google Forms
 function handleFormSubmit(e) {
-    e.preventDefault();
+    // Don't prevent default - let Google Forms handle submission
     
-    const formData = new FormData(e.target);
-    const formValues = Object.fromEntries(formData);
+    const form = e.target;
+    const formData = new FormData(form);
+    
+    // Get form field values using Google Forms entry names
+    const name = formData.get('entry.1155172913');
+    const email = formData.get('entry.760362264');
+    const message = formData.get('entry.1862691564');
+    const privacy = formData.get('entry.1900198387');
     
     // Validate required fields
-    if (!formValues.name || !formValues.email || !formValues.message) {
-        showNotification('Please fill in all required fields.', 'error');
+    if (!name || !email || !message || !privacy) {
+        e.preventDefault();
+        showNotification('Please fill in all required fields and accept the privacy policy.', 'error');
         return;
     }
     
     // Validate email format
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(formValues.email)) {
+    if (!emailRegex.test(email)) {
+        e.preventDefault();
         showNotification('Please enter a valid email address.', 'error');
         return;
     }
     
     // Show loading state
-    const submitButton = e.target.querySelector('button[type="submit"]');
+    const submitButton = form.querySelector('button[type="submit"]');
     const originalText = submitButton.textContent;
     submitButton.textContent = 'Sending...';
     submitButton.disabled = true;
     
-    // Simulate form submission (replace with actual API call)
+    // Set up success handling
     setTimeout(() => {
+        // Hide the form
+        form.style.display = 'none';
+        
         // Show success message
-        showNotification('Thank you for your enquiry! We\'ll get back to you soon.', 'success');
+        const successMessage = document.querySelector('#success-message');
+        if (successMessage) {
+            successMessage.style.display = 'block';
+        } else {
+            // Create success message if it doesn't exist
+            const successDiv = document.createElement('div');
+            successDiv.id = 'success-message';
+            successDiv.innerHTML = `
+                <div style="text-align: center; padding: 30px; background: var(--color-glass); border-radius: var(--radius-lg); margin-top: 20px;">
+                    <div style="font-size: 48px; margin-bottom: 16px;">✅</div>
+                    <h4 style="color: #10b981; margin-bottom: 12px; font-size: 24px;">Thank you for your enquiry!</h4>
+                    <p style="color: var(--color-text-secondary); font-size: 16px; margin-bottom: 0;">We'll get back to you within 24 hours to discuss your requirements.</p>
+                </div>
+            `;
+            form.parentNode.appendChild(successDiv);
+        }
         
-        // Reset form
-        e.target.reset();
+        // Reset form after 5 seconds
+        setTimeout(() => {
+            form.style.display = 'block';
+            const successMessage = document.querySelector('#success-message');
+            if (successMessage) {
+                successMessage.style.display = 'none';
+            }
+            form.reset();
+            
+            // Reset button
+            submitButton.textContent = originalText;
+            submitButton.disabled = false;
+            
+            // Remove focused class from form groups
+            const formGroups = form.querySelectorAll('.form-group');
+            formGroups.forEach(group => group.classList.remove('focused'));
+        }, 5000);
         
-        // Reset button
-        submitButton.textContent = originalText;
-        submitButton.disabled = false;
-        
-        // Remove focused class from form groups
-        const formGroups = e.target.querySelectorAll('.form-group');
-        formGroups.forEach(group => group.classList.remove('focused'));
-        
-    }, 2000);
+    }, 1000); // Small delay to ensure form submission goes through
 }
+
 
 // Parallax Effects
 function initializeParallaxEffects() {
